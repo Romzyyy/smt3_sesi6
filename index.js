@@ -15,7 +15,7 @@ app.get("/mahasiswa", (req, res) => {
     const sql = "SELECT * FROM mahasiswa";
     db.query(sql, (err, fields) => {
         if (err) throw err;
-        response(200, fields, "asdasdasdasdasdas", res);
+        response(200, fields, "selected success", res);
     });
 });
 
